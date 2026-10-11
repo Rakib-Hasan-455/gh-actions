@@ -1,9 +1,9 @@
-name: Manual Workflow
+name: Second Manual Workflow
 on:
   workflow_dispatch:
 
 jobs:
-  first-manual-workflow:
+  second-manual-workflow-job:
     runs-on: macos-latest
 
     steps:
