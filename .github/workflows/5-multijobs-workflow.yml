@@ -1,0 +1,34 @@
+name: On Push branch Workflow
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  on-push-workflow-first-job:
+    runs-on: macos-latest
+
+    steps:
+      - name: First step
+        run: |
+          echo "Hello, World!"
+          echo "Hello again!"
+      - name: second step
+        run:  echo "Hello, second step!"
+  on-push-workflow-second-job:
+    runs-on: macos-latest
+
+    steps:
+      - name: First step
+        run: |
+          echo "Hello, World!"
+          echo "Hello again!"
+      - name: second step
+        run:  echo "Hello, second step!"
+
+
+
+
+
+
+
