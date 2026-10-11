@@ -1,4 +1,4 @@
-name: On Push branch Workflow
+name: Multi-job Workflow
 on:
   push:
     branches:
