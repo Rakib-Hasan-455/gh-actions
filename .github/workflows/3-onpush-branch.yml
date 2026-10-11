@@ -1,4 +1,4 @@
-name: Second Manual Workflow
+name: On Push branch Workflow
 on:
   push:
     branches:
