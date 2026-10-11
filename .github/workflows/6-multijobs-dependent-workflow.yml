@@ -1,0 +1,44 @@
+name: Multi-job Dependent Workflow
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  on-push-workflow-first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: First step
+        run: |
+          echo "Hello, World!"
+          echo "Hello again!"
+      - name: second step
+        run:  echo "Hello, second step!"
+
+  on-push-workflow-second-job:
+    runs-on: macos-latest
+    needs: [on-push-workflow-first-job]
+    steps:
+      - name: First step
+        run: |
+          echo "Hello, World!"
+          echo "Hello again!"
+      - name: second step
+        run:  echo "Hello, second step!"
+
+  on-push-workflow-third-job:
+    runs-on: ubuntu-latest
+    needs: [on-push-workflow-first-job, on-push-workflow-second-job]
+    steps:
+      - name: First step
+        run: |
+          echo "Hello, World!"
+          echo "Hello again!"
+      - name: second step
+        run:  echo "Hello, second step!"
+
+
+
+
+
+
