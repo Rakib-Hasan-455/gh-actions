@@ -1,4 +1,5 @@
 name: First Workflow
+# on all push
 on: [push]
 
 jobs:

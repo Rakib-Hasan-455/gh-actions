@@ -1,0 +1,20 @@
+name: Second Manual Workflow
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  on-push-workflow-job:
+    runs-on: macos-latest
+
+    steps:
+      - name: First step
+        run: |
+          echo "Hello, World!"
+          echo "Hello again!"
+      - name: second step
+        run:  echo "Hello, second step!"
+
+
+

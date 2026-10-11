@@ -1,0 +1,19 @@
+name: Second Manual Workflow
+on:
+  schedule:
+    - cron: "*/5 * * * *" # Runs in every 5 minutes
+
+jobs:
+  cronjob-workflow-job:
+    runs-on: macos-latest
+
+    steps:
+      - name: First step
+        run: |
+          echo "Hello, World!"
+          echo "Hello again!"
+      - name: second step
+        run:  echo "Hello, second step!"
+
+
+
