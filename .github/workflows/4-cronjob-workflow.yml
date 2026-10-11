@@ -1,4 +1,4 @@
-name: Second Manual Workflow
+name: Cron workflow
 on:
   schedule:
     - cron: "*/5 * * * *" # Runs in every 5 minutes
