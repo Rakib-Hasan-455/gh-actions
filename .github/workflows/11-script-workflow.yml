@@ -17,5 +17,11 @@ jobs:
       - name: Run Python Script
         run: python script.py
 
-      - name: Dockerhub login
-        run: docker login --password ${{ secrets.DOCKER_PASSWORD }}
+      - name: Test Secret Access
+        run: |
+            if [ -n "${{ secrets.DOCKER_PASSWORD }}" ]; then
+             echo "Success: The secret is accessible and contains a value!"
+             else
+            echo "Fail: The secret is empty or not found."
+            exit 1
+            fi
