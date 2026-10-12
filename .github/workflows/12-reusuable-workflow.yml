@@ -1,0 +1,19 @@
+name: 12-reusuable-workflow.yml
+on:
+  workflow_call:
+
+jobs:
+    reusable-workflow-job:
+        runs-on: macos-latest
+
+        steps:
+        - name: Checkout repository
+          uses: actions/checkout@v3
+
+        - name: Image Building
+          run: |
+            echo "Building Docker image..."
+
+        - name: Image Pushing
+          run: |
+            echo "Docker Image Pushing..." 
