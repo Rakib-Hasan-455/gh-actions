@@ -1,0 +1,21 @@
+name: 14-run-composite-action.yml
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'Name of the person to greet'
+        required: true
+        default: 'Unnamed'
+
+jobs:
+  composite-action:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Run Composite Action
+      uses: ./.github/actions/greeting-generator-composite-action
+      with:
+        name: ${{ github.event.inputs.name }}
