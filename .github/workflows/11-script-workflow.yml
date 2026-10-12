@@ -16,3 +16,6 @@ jobs:
 
       - name: Run Python Script
         run: python script.py
+
+      - name: Dockerhub login
+        run: docker login -- password ${{ secrets.DOCKER_PASSWORD }}
