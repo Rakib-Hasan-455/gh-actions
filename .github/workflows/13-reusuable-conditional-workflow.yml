@@ -5,11 +5,8 @@ on:
       - "backend/**"
 
 jobs:
-  on-push-workflow-first-job:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Build backend image
-        uses: Rakib-Hasan-455/gh-actions/.github/workflows/12-reusuable-workflow.yml
+  on-push-reusuable-workflow-first-job:
+    uses: Rakib-Hasan-455/gh-actions/.github/workflows/12-reusuable-workflow.yml@main
 
 
 
