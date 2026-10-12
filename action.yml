@@ -20,8 +20,3 @@ runs:
       id: greeting
       run: |
         echo "message=Hello, ${{ inputs.name }} !" >> $GITHUB_OUTPUT
-
-    - name: Print Greetings Message
-      shell: bash
-      run: |
-        echo "${{ steps.greeting.outputs.message }}"
