@@ -18,4 +18,4 @@ jobs:
         run: python script.py
 
       - name: Dockerhub login
-        run: docker login -- password ${{ secrets.DOCKER_PASSWORD }}
+        run: docker login --password ${{ secrets.DOCKER_PASSWORD }}
