@@ -1,4 +1,4 @@
-name: Multi-job Workflow
+name: 5-multijobs-workflow.yml
 on:
   push:
     branches:

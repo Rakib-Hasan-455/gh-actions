@@ -1,0 +1,18 @@
+name: 11-script-workflow.yml
+on:
+  workflow_dispatch:
+
+jobs:
+  script-workflow:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Print Script Workflow
+        run: |
+          echo "Running script workflow"
+
+      - name: Run Python Script
+        run: python script.py

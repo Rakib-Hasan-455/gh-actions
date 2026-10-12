@@ -1,4 +1,4 @@
-name: Predefined Workflow
+name: 9-predefined-workflow.yml
 on:
   workflow_dispatch:
 

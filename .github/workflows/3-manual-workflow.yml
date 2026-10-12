@@ -1,4 +1,4 @@
-name: Second Manual Workflow
+name: 3-manual-workflow.yml
 on:
   workflow_dispatch:
 

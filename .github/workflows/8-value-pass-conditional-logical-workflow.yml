@@ -1,4 +1,4 @@
-name: value pass conditional logical workflow
+name: 8-value-pass-conditional-logical-workflow.yml
 on:
   workflow_dispatch:
     inputs:

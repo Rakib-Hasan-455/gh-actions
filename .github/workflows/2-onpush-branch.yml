@@ -1,4 +1,4 @@
-name: On Push branch Workflow
+name: 2-onpush-branch.yml
 on:
   push:
     branches:

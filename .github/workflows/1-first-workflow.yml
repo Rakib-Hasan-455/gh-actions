@@ -1,4 +1,4 @@
-name: First Workflow
+name: 1-first-workflow.yml
 # on all push
 on: [push]
 

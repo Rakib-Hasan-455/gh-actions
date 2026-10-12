@@ -1,4 +1,4 @@
-name: Multi-job Dependent Workflow
+name: 6-multijobs-dependent-workflow.yml
 on:
   workflow_dispatch:
 
