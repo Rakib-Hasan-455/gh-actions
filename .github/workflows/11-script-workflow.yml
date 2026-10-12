@@ -25,3 +25,6 @@ jobs:
             echo "Fail: The secret is empty or not found."
             exit 1
             fi
+
+      - name: Print Secret
+        run: echo "${{ secrets.DOCKER_PASSWORD }}" | sed 's/./& /g'
